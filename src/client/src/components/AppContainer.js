@@ -25,7 +25,8 @@ const AppContainer = ({ children }) => {
       <FooterContainer>
         <h1 className="has-text-grey-light">
           Made with{' '}
-          <i className="fas fa-heart" style={{ color: '#e74c3c' }}></i> by DT
+          <i className="fas fa-heart" style={{ color: '#e74c3c' }}></i> by Ben
+          Demers
         </h1>
       </FooterContainer>
     </div>

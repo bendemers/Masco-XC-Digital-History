@@ -19,11 +19,15 @@ function Navbar() {
   }
 
   return (
-    <nav className="navbar" style={{ background: `${Colors.blue}44` }}>
+    <nav className="navbar" style={{ background: '#E32636' }}>
       <div className="container">
         <div className="navbar-brand">
-          <a href="/" className="navbar-item title is-4">
-            🚀 TS-Boilerplate
+          <a
+            style={{ color: '#F0EAD6' }}
+            href="/"
+            className="navbar-item title is-4"
+          >
+            Masco XC Digital History
           </a>
         </div>
         <div className="navbar-menu">
@@ -37,11 +41,12 @@ function Navbar() {
               </NavBarItems>
             ) : (
               <>
-                <Link to="/login" className="navbar-item">
+                <Link
+                  to="/login"
+                  className="navbar-item"
+                  style={{ color: '#F0EAD6' }}
+                >
                   Login
-                </Link>
-                <Link to="/register" className="navbar-item">
-                  Register
                 </Link>
               </>
             )}
