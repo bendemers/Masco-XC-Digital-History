@@ -12,8 +12,8 @@ function IndexPage() {
             Welcome to the Masconomet Cross Country Digital Histroy Site!
           </h1>
           <h2 className="subtitle">
-            Please feel free to look around and enjoy the history of our great
-            program since 1964.
+            Please feel free to look around and enjoy the history of the
+            program.
           </h2>
         </div>
       </header>
