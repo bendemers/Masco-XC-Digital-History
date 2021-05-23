@@ -13,6 +13,8 @@ router.post('/newSeason', async (req, res) => {
   const { teamAward } = req.body;
   const { coachesAward } = req.body;
   const { roster } = req.body;
+  const { notes } = req.body;
+  const { imageIDs } = req.body;
 
   if (await Season.findOne({ year })) {
     return errorHandler(res, 'Season already exists.');
@@ -25,7 +27,8 @@ router.post('/newSeason', async (req, res) => {
     teamAward,
     coachesAward,
     roster,
-    notes: 'Good season boys!',
+    notes,
+    imageIDs,
   });
 
   return newSeason

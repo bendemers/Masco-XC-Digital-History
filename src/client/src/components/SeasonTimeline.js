@@ -33,6 +33,12 @@ function SeasonTimeline() {
                 Record: {season.record.wins}-{season.record.ties}-
                 {season.record.losses}
               </p>
+              {season.imageIDs.map((image) => (
+                <img
+                  src={'http://drive.google.com/uc?export=view&id=' + image}
+                  alt="Yearbook Photo"
+                />
+              ))}
               <p>
                 {' '}
                 <a href={'/season/' + season.year}>Learn More</a>
